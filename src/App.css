@@ -1,0 +1,24 @@
+.App {
+  width: 100%;
+  text-align: center;
+}
+
+.App__wrapper {
+  max-width: 1440px;
+  min-height: 100vh;
+  padding: 0 100px;
+  margin: 0 auto;
+}
+
+.main {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.left-side {
+  width: 70%;
+}
+
+.right-side {
+  width: 30%;
+}
