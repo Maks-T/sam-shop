@@ -55,7 +55,7 @@
 }
 
 .cart__btn-checkout:active {
-  border: 2px solid #2b2a29;
+  border: 2px solid gray;
   background-color: white;
   color: #2b2a29;
   font-weight: 700;

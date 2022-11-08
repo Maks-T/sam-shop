@@ -2,7 +2,7 @@ import React, { useContext, useEffect, useState } from 'react';
 import { CSSTransition } from 'react-transition-group';
 import Message from '../message/message';
 import Order from '../order/order';
-import { StateContext } from './../../App';
+import { StateContext } from './../reducerProvider/reducerProvider';
 import './cart.style.css';
 
 const Cart = () => {
@@ -36,18 +36,21 @@ const Cart = () => {
           }
         </div>
       </div>
-      <div className="cart__checkout-panel">
-        <p className="cart__total">{`Total: ${state.total}`}</p>
-        <button
-          className="cart__btn-checkout"
-          onClick={() => {
-            dispatch({ type: 'CHECKOUT' });
-            setIsCheckout(true);
-          }}
-        >
-          checkout
-        </button>
-      </div>
+      {!!state.orders.length && (
+        <div className="cart__checkout-panel">
+          <p className="cart__total">{`Total: ${state.total}`}</p>
+
+          <button
+            className="cart__btn-checkout"
+            onClick={() => {
+              dispatch({ type: 'CHECKOUT' });
+              setIsCheckout(true);
+            }}
+          >
+            checkout
+          </button>
+        </div>
+      )}
     </div>
   );
 };
