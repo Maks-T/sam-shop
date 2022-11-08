@@ -79,6 +79,7 @@
 
   background: url('./../../assets/icon-buy.svg') no-repeat center, #1d1f22;
   background-size: 50%;
+  cursor: pointer;
 }
 
 .product__btn-buy:hover {
