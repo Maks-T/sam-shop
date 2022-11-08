@@ -2,7 +2,7 @@ import React, { useReducer } from 'react';
 
 export const StateContext = React.createContext();
 
-const initialState = {
+const initialState = JSON.parse(localStorage.getItem('orders')) || {
   orders: [],
   total: 0,
 };
@@ -24,6 +24,8 @@ const reducer = (state, action) => {
         0
       );
 
+      localStorage.setItem('orders', JSON.stringify(state));
+
       return { ...state };
 
     case 'REMOVE_PRODUCT_IN_CART':
@@ -36,9 +38,12 @@ const reducer = (state, action) => {
         0
       );
 
+      localStorage.setItem('orders', JSON.stringify(state));
+
       return { ...state };
     case 'CHECKOUT':
-      console.log(initialState);
+      localStorage.removeItem('orders');
+
       return {
         orders: [],
         total: 0,
