@@ -13,7 +13,7 @@ const ProductList = () => {
 
   const fetchProducts = async () => {
     setIsLoading(true);
-    const response = await axios.get('https://dummyjson.com/products');
+    const response = await axios.get('https://dummyjson.com/products?limit=39');
     setProducts(response.data.products);
     setIsLoading(false);
   };
