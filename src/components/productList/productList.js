@@ -5,7 +5,7 @@ import Product from '../product/product';
 
 import './productList.style.css';
 
-const ProductList = (props) => {
+const ProductList = () => {
   const [products, setProducts] = useState([]);
   const { dispatch } = useContext(StateContext);
 

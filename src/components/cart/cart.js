@@ -1,11 +1,18 @@
-import React, { useContext } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
+import { CSSTransition } from 'react-transition-group';
+import Message from '../message/message';
 import Order from '../order/order';
 import { StateContext } from './../../App';
 import './cart.style.css';
 
-const Cart = (props) => {
+const Cart = () => {
   const { state, dispatch } = useContext(StateContext);
-  console.log('cart  , ', state);
+  const [isCheckout, setIsCheckout] = useState(false);
+
+  useEffect(() => {
+    setIsCheckout(false);
+  }, [isCheckout]);
+
   return (
     <div className="cart">
       <div>
@@ -16,13 +23,27 @@ const Cart = (props) => {
           {state.orders.map((order) => (
             <Order order={order} dispatch={dispatch} key={order.product.id} />
           ))}
+          {
+            <CSSTransition
+              in={isCheckout}
+              timeout={4000}
+              classNames="message"
+              mountOnEnter
+              unmountOnExit
+            >
+              <Message>Thank you for the purchase!</Message>
+            </CSSTransition>
+          }
         </div>
       </div>
       <div className="cart__checkout-panel">
         <p className="cart__total">{`Total: ${state.total}`}</p>
         <button
           className="cart__btn-checkout"
-          onClick={() => dispatch({ type: 'CHECKOUT' })}
+          onClick={() => {
+            dispatch({ type: 'CHECKOUT' });
+            setIsCheckout(true);
+          }}
         >
           checkout
         </button>
