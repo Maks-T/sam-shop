@@ -7,9 +7,11 @@ const Product = ({ product, dispatch }) => {
 
   return (
     <div className="product">
-      <img className="product__img" alt={title} src={images[0]}></img>
-      <h2 className="product__title">{title}</h2>
-      <p className="product__desc">{description}</p>
+      <div className="product__main-info">
+        <img className="product__img" alt={title} src={images[0]}></img>
+        <h2 className="product__title">{title}</h2>
+        <p className="product__desc">{description}</p>
+      </div>
       <p className="product__price">{`$${price}`}</p>
       <button
         className="product__btn-buy"
