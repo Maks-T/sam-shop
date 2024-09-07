@@ -1,15 +1,14 @@
 {
   "files": {
     "main.css": "/sam-shop/site/static/css/main.86bd323c.css",
-    "main.js": "/sam-shop/site/static/js/main.fcde12b3.js",
-    "static/media/logo.png": "/sam-shop/site/static/media/logo.0f377acc6b6bc92dc263.png",
+    "main.js": "/sam-shop/site/static/js/main.4d118ace.js",
     "static/media/icon-buy.svg": "/sam-shop/site/static/media/icon-buy.dea28a594ec765e678eb.svg",
     "index.html": "/sam-shop/site/index.html",
     "main.86bd323c.css.map": "/sam-shop/site/static/css/main.86bd323c.css.map",
-    "main.fcde12b3.js.map": "/sam-shop/site/static/js/main.fcde12b3.js.map"
+    "main.4d118ace.js.map": "/sam-shop/site/static/js/main.4d118ace.js.map"
   },
   "entrypoints": [
     "static/css/main.86bd323c.css",
-    "static/js/main.fcde12b3.js"
+    "static/js/main.4d118ace.js"
   ]
 }
