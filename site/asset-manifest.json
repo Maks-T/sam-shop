@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/site/static/css/main.063b5fc8.css",
-    "main.js": "/site/static/js/main.3bf09114.js",
-    "static/media/logo.png": "/site/static/media/logo.93102aecf2b80cbe5e88.png",
-    "static/media/icon-buy.svg": "/site/static/media/icon-buy.dea28a594ec765e678eb.svg",
-    "index.html": "/site/index.html",
-    "main.063b5fc8.css.map": "/site/static/css/main.063b5fc8.css.map",
-    "main.3bf09114.js.map": "/site/static/js/main.3bf09114.js.map"
+    "main.css": "/sam-shop/site/static/css/main.86bd323c.css",
+    "main.js": "/sam-shop/site/static/js/main.4bb748fc.js",
+    "static/media/logo.png": "/sam-shop/site/static/media/logo.93102aecf2b80cbe5e88.png",
+    "static/media/icon-buy.svg": "/sam-shop/site/static/media/icon-buy.dea28a594ec765e678eb.svg",
+    "index.html": "/sam-shop/site/index.html",
+    "main.86bd323c.css.map": "/sam-shop/site/static/css/main.86bd323c.css.map",
+    "main.4bb748fc.js.map": "/sam-shop/site/static/js/main.4bb748fc.js.map"
   },
   "entrypoints": [
-    "static/css/main.063b5fc8.css",
-    "static/js/main.3bf09114.js"
+    "static/css/main.86bd323c.css",
+    "static/js/main.4bb748fc.js"
   ]
 }
